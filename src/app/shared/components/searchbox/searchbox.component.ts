@@ -8,9 +8,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class SearchboxComponent {
 
+  // Ingresa datos al componente de padre a hijo
+
   @Input()
   public placeholder: string = '';
 
+  //Emite datos desde este componente a su componente padre
   @Output() onValue = new EventEmitter<string>();
 
 
