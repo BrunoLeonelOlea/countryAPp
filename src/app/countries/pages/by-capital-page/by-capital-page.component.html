@@ -4,7 +4,11 @@
 <div class="row">
     <div class="col">
         <!-- SearchBox -->
-        <app-searchbox placeholder="placeholder"></app-searchbox>
+        <app-searchbox 
+            (onValue) = "searchByCapital($event)"
+            placeholder="buscar por capital"
+            >
+        </app-searchbox>
     </div>
 </div>
 
